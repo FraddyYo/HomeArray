@@ -8,31 +8,56 @@ public class Main {
         double[] array2 = {1.57, 7.654, 9.986};
         int[] month = new int[12];
 
-        // Задание 2
+        // Задание 2.1
         int[] arrayThird = {1, 2, 3};
         arrayThird[0] = 1;
         for (int i = 0; i < arrayThird.length; i++) {
-            arrayThird[i] = i + 1;
             if (i > 0) {
                 System.out.print(",");
             }
             System.out.print(arrayThird[i]);
         }
-        {
-            System.out.println();
-        }
-        // Задание 2.1
+        System.out.println();
+
+        // Задание 2.2
         {
             double[] arrayFractions = {1.57, 7.654, 9.986};
             for (int y = 0; y < arrayFractions.length; y++) {
-                System.out.print(arrayFractions[y] + ",");
-                if (arrayFractions[y] == arrayFractions.length - 1) ;
-
-
+                if (y > 0) {
+                    System.out.print(",");
+                }
+                System.out.print(arrayFractions[y]);
+            }
+            System.out.println();
+            // Задание 2.3
+            {
+                int[] arrayMonth = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+                arrayMonth[0] = 1;
+                for (int i = 0; i < arrayMonth.length; i++) {
+                    if (i > 0) {
+                        System.out.print(",");
+                    }
+                    System.out.print(arrayMonth[i]);
+                }
+                System.out.println();
+                // Задание 3.1
+                int[] arrayThird1 = {1, 2, 3};
+                arrayThird1[0] = 3;
+                for (int i = 0; i < arrayThird1.length; i++) {
+                    if (i > 0) {
+                        System.out.print(",");
+                    }
+                    System.out.print(arrayThird1[i]);
+                }
             }
         }
     }
 }
+
+
+
+
+
 
 
 
