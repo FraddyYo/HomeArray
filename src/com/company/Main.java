@@ -32,7 +32,6 @@ public class Main {
             // Задание 2.3
             {
                 int[] arrayMonth = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
-                arrayMonth[0] = 1;
                 for (int i = 0; i < arrayMonth.length; i++) {
                     if (i > 0) {
                         System.out.print(",");
@@ -42,7 +41,6 @@ public class Main {
                 System.out.println();
                 // Задание 3.1
                 int[] arrayThird1 = {1, 2, 3};
-                arrayThird1[0] = 1;
                 for (int i = arrayThird1.length - 1; i >= 0; i--) {
                     if (i <= 1) {
                         System.out.print(",");
@@ -71,9 +69,10 @@ public class Main {
                 // Задание 4.1
                 int[] arrayThird2 = {1, 2, 3};
                 for (int i = 0; i < arrayThird2.length; i++) {
-                    if (i % 2 != 0)
-                        i++;
+                    if (arrayThird2[i] % 2 != 0 )
+                    arrayThird2[i]++;
                     {
+                        if (i > 0)
                         System.out.print(",");
                     }
                     System.out.print(arrayThird2[i]);
@@ -82,6 +81,12 @@ public class Main {
         }
     }
 }
+
+
+
+
+
+
 
 
 
