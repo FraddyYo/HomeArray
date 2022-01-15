@@ -42,17 +42,48 @@ public class Main {
                 System.out.println();
                 // Задание 3.1
                 int[] arrayThird1 = {1, 2, 3};
-                arrayThird1[0] = 3;
-                for (int i = 0; i < arrayThird1.length; i++) {
-                    if (i > 0) {
+                arrayThird1[0] = 1;
+                for (int i = arrayThird1.length - 1; i >= 0; i--) {
+                    if (i <= 1) {
                         System.out.print(",");
                     }
                     System.out.print(arrayThird1[i]);
+                }
+                System.out.println();
+                // Задание 3.2
+                double[] arrayFractions1 = {1.57, 7.654, 9.986};
+                for (int i1 = arrayFractions1.length - 1; i1 >= 0; i1--) {
+                    if (i1 <= 1) {
+                        System.out.print(",");
+                    }
+                    System.out.print(arrayFractions1[i1]);
+                }
+                System.out.println();
+                // Задание 3.3
+                int[] arrayMonth1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+                for (int i = arrayMonth.length - 1; i >= 0; i--) {
+                    if (i <= 10) {
+                        System.out.print(",");
+                    }
+                    System.out.print(arrayMonth1[i]);
+                }
+                System.out.println();
+                // Задание 4.1
+                int[] arrayThird2 = {1, 2, 3};
+                for (int i = 0; i < arrayThird2.length; i++) {
+                    if (i % 2 != 0)
+                        i++;
+                    {
+                        System.out.print(",");
+                    }
+                    System.out.print(arrayThird2[i]);
                 }
             }
         }
     }
 }
+
+
 
 
 
